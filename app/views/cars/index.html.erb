@@ -8,13 +8,13 @@
                     <div class="card-body">
                         <h5 class="card-title">
                             <%= car.brand %>
-                                <%= car.model %>
-                                    <%= car.year_of_production %>
+                            <%= car.model %>
+                            <%= car.year_of_production %>
                         </h5>
                         <p class="card-text">
-                            <strong>Price per Day:</strong> €<%= car.price_per_day %><br>
-                                <strong>Address:</strong>
-                                <%= car.address %>
+                            <%= car.address %>
+                            €<%= car.price_per_day %>/Day
+
                         </p>
                     </div>
                     <% end %>
