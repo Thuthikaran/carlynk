@@ -2,12 +2,13 @@
 class ReservationsController < ApplicationController
   def create
     @car = Car.find(params[:car_id])
-    @reservation = @car.reservations.build(reservation_params)
-    
+    @reservation = Reservation.new(reservation_params)
+    @reservation.car = @car
+    @reservation.user = current_user
     if @reservation.save
       redirect_to @car, notice: 'Reservation was successfully created.'
     else
-      redirect_to @car, alert: 'There was a problem with your reservation.'
+      render :new, status: :unprocessable_entity, alert: 'Something went wrong'
     end
   end
 
