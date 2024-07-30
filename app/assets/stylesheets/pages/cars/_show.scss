@@ -84,33 +84,3 @@
 .form button:hover {
     background-color: #0056b3;
 }   
-
-.back-to-list {
-    display: inline-block;
-    padding: 10px 20px;
-    /* Space from other content */
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    /* Text color */
-    background-color: #300c7f;
-    /* Background color */
-    border: 2px solid #300c7f;
-    /* Border color matching the background */
-    border-radius: 5px;
-    /* Rounded corners */
-    text-decoration: none;
-    /* Remove underline */
-    text-align: center;
-    transition: all 0.3s ease;
-    /* Smooth transition effect */
-}
-
-.back-to-list:hover {
-    color: #300c7f;
-    /* Text color on hover */
-    background-color: #ffffff;
-    /* Background color on hover */
-    border-color: #300c7f;
-    /* Border color on hover */
-}

@@ -3,7 +3,6 @@ html,
 body {
     height: 100%;
     margin: 0;
-
 }
 
 /* Make the container take up the full viewport height */
@@ -24,21 +23,59 @@ body {
     justify-content: center;
 }
 
-
-
+/* Footer */
 footer {
     background-color: rgb(65, 0, 186);
     /* Match the navbar background */
     color: white;
     text-align: center;
     padding: 15px 20px;
-    /* Keeps footer at the bottom */
     font-size: 1rem;
     position: relative;
-
     width: 100%;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Button Styling */
+button {
+    background-color: rgb(65, 0, 186);
+    /* Matching background color */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover State */
+button:hover {
+    background-color: #fff;
+    /* White background on hover */
+    transform: scale(1.05);
+    color: rgb(65, 0, 186);
+    /* Change text color on hover */
+}
+
+/* Button Focus State */
+button:focus {
+    outline: none;
+}
+
+/* Button Active State */
+button:active {
+    transform: scale(1);
+}
+
+/* Remove text decoration from link inside the button */
+button a {
+    text-decoration: none;
+    color: inherit;
+    /* Ensure the link inherits the button's text color */
 }
