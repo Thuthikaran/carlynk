@@ -1,1 +1,24 @@
-<h1>Hello World</h1>
+<h1 class="index-title">Find Your Perfect Car</h1>
+
+<div class="index-container">
+    <div class="row justify-content-center">
+        <% @cars.each do |car| %>
+            <div class="col-md-4 mb-4">
+                <div class="card car-card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= car.brand %>
+                                <%= car.model %>
+                                <%= car.year_of_production %>
+                        </h5>
+                        <p class="card-text">
+                            <strong>Price per Day:</strong> €<%= car.price_per_day %><br>
+                                <strong>Address:</strong>
+                                <%= car.address %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

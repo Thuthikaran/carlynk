@@ -1,0 +1,38 @@
+.index-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.index-container {
+    max-width: 1200px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 1rem;
+    /* Add padding if needed */
+}
+
+.car-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.car-card:hover {
+    transform: scale(1.02);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
