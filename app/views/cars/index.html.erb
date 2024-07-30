@@ -14,11 +14,38 @@
                         <p class="card-text">
                             <%= car.address %>
                             €<%= car.price_per_day %>/Day
-
                         </p>
                     </div>
                     <% end %>
             </div>
             <% end %>
     </div>
+
+<div class="reservations-container">
+    <h3 class="reservations-title">My Reservations</h3>
+    <div class="reservations-list">
+        <% @reservations.each do |reservation| %>
+            <% car=Car.find(reservation.car_id) %>
+                <div class="reservation-card">
+                    <!-- <img src="<%= car.image_urls %>" class="reservation-image" alt="<%= car.brand %> <%= car.model %>"> -->
+                    <div class="reservation-content">
+                        <h5 class="reservation-title">
+                            <%= car.brand %>
+                                <%= car.model %> (<%= car.year_of_production %>)
+                        </h5>
+                        <p class="reservation-details">
+                            <strong>Start Date:</strong>
+                            <%= reservation.start_date.strftime("%d %B %Y") %><br>
+                                <strong>End Date:</strong>
+                                <%= reservation.end_date.strftime("%d %B %Y") %>
+                        </p>
+                    </div>
+                    <div class="reservation-footer">
+                        <small>Reservation ID: <%= reservation.id %></small>
+                    </div>
+                </div>
+                <% end %>
+    </div>
+</div>
+
 </div>
