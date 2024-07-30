@@ -103,3 +103,39 @@ Car.find_or_create_by!(
 end
 
 puts "Created or updated cars for user #{thuthi.email}"
+
+# Create a user with the given details
+
+# Create 4 more users
+
+# Existing user
+User.find_or_create_by!(email: "thuthi@mail.com") do |user|
+  user.created_at = "2024-07-30 13:17:13"
+  user.updated_at = "2024-07-30 13:17:13"
+  user.password = "securepassword"  # Use a secure password
+end
+
+# Additional users
+User.find_or_create_by!(email: "sahba@mail.com") do |user|
+  user.created_at = "2024-07-30 14:00:00"
+  user.updated_at = "2024-07-30 14:00:00"
+  user.password = "securepassword1"  # Use a secure password
+end
+
+User.find_or_create_by!(email: "pedro@mail.com") do |user|
+  user.created_at = "2024-07-30 15:00:00"
+  user.updated_at = "2024-07-30 15:00:00"
+  user.password = "securepassword2"  # Use a secure password
+end
+
+User.find_or_create_by!(email: "mark@mail.com") do |user|
+  user.created_at = "2024-07-30 16:00:00"
+  user.updated_at = "2024-07-30 16:00:00"
+  user.password = "securepassword3"  # Use a secure password
+end
+
+User.find_or_create_by!(email: "jess@mail.com") do |user|
+  user.created_at = "2024-07-30 17:00:00"
+  user.updated_at = "2024-07-30 17:00:00"
+  user.password = "securepassword4"  # Use a secure password
+end
