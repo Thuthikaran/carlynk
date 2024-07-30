@@ -4,12 +4,12 @@
     <div class="row justify-content-center">
         <% @cars.each do |car| %>
             <div class="col-md-4 mb-4">
-                <div class="card car-card">
+                <%= link_to car_path(car), class: 'card car-card text-decoration-none text-dark' do %>
                     <div class="card-body">
                         <h5 class="card-title">
                             <%= car.brand %>
                                 <%= car.model %>
-                                <%= car.year_of_production %>
+                                    <%= car.year_of_production %>
                         </h5>
                         <p class="card-text">
                             <strong>Price per Day:</strong> €<%= car.price_per_day %><br>
@@ -17,8 +17,8 @@
                                 <%= car.address %>
                         </p>
                     </div>
-                </div>
+                    <% end %>
             </div>
-        <% end %>
+            <% end %>
     </div>
 </div>

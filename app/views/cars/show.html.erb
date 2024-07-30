@@ -1,0 +1,50 @@
+<div class="car-image">
+    <img src="" alt="">
+    <div class="car-brand">
+        <%= @car.brand %>
+        <%= @car.model %>
+        <%= @car.year_of_production %>
+    </div>
+</div>
+
+
+<div class="car-info-container">
+    <div class="car-details">
+        <p><strong>Address:</strong>
+            <%= @car.address %>
+        </p>
+        <p><strong>Price per Day:</strong> €<%= @car.price_per_day %>
+        </p>
+        <p><strong>Color:</strong>
+            <%= @car.color %>
+        </p>
+        <p><strong>Transmission:</strong>
+            <%= @car.transmission %>
+        </p>
+        <p><strong>Mileage:</strong>
+            <%= @car.mileage %> km
+        </p>
+        <p><strong>Seats:</strong>
+            <%= @car.seats %>
+        </p>
+        <p><strong>Fuel Type:</strong>
+            <%= @car.fuel_type %>
+        </p>
+    </div>
+
+
+    <div class="form">
+        <h3 class="text-center">Book this car</h3>
+
+        <%= simple_form_for [@car.reservations.build], url: reservations_path, method: :post, data: { controller: 'datepicker' } do |f| %>
+            <%= f.input :start_date, as: :string, input_html: { data: { datepicker_target: "startDate", action: "input->total#calculateTotal" } } %>
+        
+            <%= f.input :end_date, as: :string, input_html: { data: { datepicker_target: "endDate", action: "input->total#calculateTotal" }, id: 'end_time' } %>
+        
+            <%= f.button :submit, class: "btn btn-primary" %>
+        <% end %>
+    </div>
+
+</div>
+
+<%= link_to 'Back to List' , cars_path %>

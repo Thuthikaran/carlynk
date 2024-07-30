@@ -1,0 +1,83 @@
+.car-image {
+    position: relative;
+    border: 1px solid red;
+    height: 250px;
+    overflow: visible;
+    padding: 10px;
+}
+
+.car-brand {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.car-info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Space between the two sections */
+    margin: 40px;
+}
+
+.car-details {
+    flex: 2;
+    /* Adjust size of the car details section */
+    background-color: #f9f9f9;
+    /* Light background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-details p {
+    margin: 10px 0;
+}
+
+.form {
+    flex: 1;
+    /* Adjust size of the form section */
+    background-color: #fff;
+    /* White background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}   
