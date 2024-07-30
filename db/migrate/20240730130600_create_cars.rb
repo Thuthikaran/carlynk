@@ -13,8 +13,6 @@ class CreateCars < ActiveRecord::Migration[7.0]
       t.integer :mileage
       t.integer :seats
       t.string :fuel_type
-      t.datetime :updated_at
-      t.datetime :created_at
 
       t.timestamps
     end
