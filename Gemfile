@@ -82,3 +82,4 @@ group :test do
   gem "rspec-rails"
 end
 
+ gem 'ffi', '< 1.17.0'
