@@ -37,20 +37,21 @@
         
             <div class="form">
                 <h3 class="text-center">Book this car</h3>
-        
-                <%= simple_form_for [@car, @reservation], method: :post, data: { controller: 'datepicker' } do |f| %>
-        
-                    <%= f.input :start_date, as: :string, input_html: { data: { datepicker_target: "startTime"} } %>
-                
+                <%= simple_form_for [@car, @reservation], method: :post, data: { controller: 'datepicker', datepicker_price_per_day_value: @car.price_per_day } do |f| %>
+                    <%= f.input :start_date, as: :string, input_html: { data: { datepicker_target: "startTime" } } %>
                     <%= f.input :end_date, as: :string, input_html: { data: { datepicker_target: "endTime" } } %>
-                
+                    <div data-datepicker-target="daysBetween">For: </div>
+                    <div data-datepicker-target="totalPrice">Total Price: €0.00</div>
                     <%= f.button :submit, class: "btn btn-primary btn-color" %>
-                <% end %>
+                <% end %>       
+
+
+
             </div>
         </div>
+        <%= link_to 'see more cars' , cars_path, class: 'back-to-list' %>
 </div>
 
-<%= link_to 'see more cars' , cars_path, class: 'back-to-list' %>
 
 
 

@@ -97,26 +97,18 @@
 }
 
 .back-to-list {
-    display: block;
     text-align: center;
-    margin-top: 20px;
     font-size: 18px;
     color: rgb(65, 0, 186);
     text-decoration: none;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    border: 1px solid rgb(65, 0, 186) ;
-    margin-top: 5px;
-    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .back-to-list:hover {
     text-decoration: none;
-    background-color: rgb(65, 0, 186);
-    color: #fff;
+    color: #0056b3;
     
 }
 
