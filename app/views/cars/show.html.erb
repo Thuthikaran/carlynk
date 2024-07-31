@@ -3,9 +3,9 @@
     <div class="car-image">
         <div class="car-brand">
             <%= image_tag @car.image_urls, alt: "#{@car.brand} #{@car.model}" , class: 'car-image-img' %>
-            <%= @car.brand %>
-            <%= @car.model %>
-            <%= @car.year_of_production %>
+           <span class="car-name"><%= @car.brand %></span>
+    <span class="car-name"><%= @car.model %></span>
+    <span class="car-name"><%= @car.year_of_production %></span>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
                 
                     <%= f.input :end_date, as: :string, input_html: { data: { datepicker_target: "endTime" } } %>
                 
-                    <%= f.button :submit, class: "btn btn-primary" %>
+                    <%= f.button :submit, class: "btn btn-primary btn-color" %>
                 <% end %>
             </div>
         </div>

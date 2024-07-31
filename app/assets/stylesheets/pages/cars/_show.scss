@@ -3,11 +3,6 @@
     height: 250px;
     overflow: visible;
     padding: 10px;
-    background: rgb(76, 76, 76);
-}
-
-.image-box {
-    border: 1px solid red;
 }
 
 .car-brand {
@@ -22,6 +17,9 @@
     color: #ffffff;
 }
 
+.car-name {
+    color: rgb(65, 0, 186);
+}
 .car-info-container {
     display: flex;
     justify-content: space-between;
@@ -103,7 +101,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    color: #007bff;
+    color: rgb(65, 0, 186);
     text-decoration: none;
     position: absolute;
     bottom: 20px;
@@ -113,4 +111,8 @@
 
 .back-to-list:hover {
     text-decoration: underline;
+}
+
+.btn-color {
+    background-color: rgb(65, 0, 186);;
 }
