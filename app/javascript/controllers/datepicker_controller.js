@@ -1,15 +1,3 @@
-// import { Controller } from "@hotwired/stimulus"
-// import flatpickr from "flatpickr"; // You need to import this to use new flatpickr()
-// // Connects to data-controller="datepicker"
-// export default class extends Controller {
-//   static targets = [ "startTime", "endTime" ]
-//   connect() {
-//     console.log("working");
-//     flatpickr(this.startTimeTarget, {})
-//     flatpickr(this.endTimeTarget, {})
-//   }
-// }
-
 import { Controller } from "@hotwired/stimulus";
 import flatpickr from "flatpickr";
 
@@ -43,8 +31,6 @@ export default class extends Controller {
     if (startDate && endDate) {
       const daysBetween = Math.round((endDate - startDate) / (1000 * 60 * 60 * 24));
       const totalPrice = daysBetween * this.pricePerDayValue;
-
-      // this.daysBetweenTarget.textContent = `Days between: ${daysBetween}`;
       this.daysBetweenTarget.textContent = `For: ${daysBetween} days`;
       this.totalPriceTarget.textContent = `Total Price: €${totalPrice.toFixed(2)}`; 
     }
