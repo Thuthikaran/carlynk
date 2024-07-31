@@ -3,13 +3,10 @@
     margin-top: 2rem;
 }
 
-.index-container {
+.row {
     max-width: 1200px;
-    /* Adjust as needed */
     margin: 0 auto;
-    /* Center the container horizontally */
     padding: 1rem;
-    /* Add padding if needed */
 }
 
 .car-card {
@@ -17,10 +14,22 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    overflow: hidden;
 }
 
 .car-card:hover {
     transform: scale(1.02);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
 .card-body {
@@ -36,7 +45,6 @@
     font-size: 1rem;
     color: #333;
 }
-
 /* app/assets/stylesheets/application.css */
 
 .reservations-container {
