@@ -6,6 +6,10 @@
     background: rgb(76, 76, 76);
 }
 
+.image-box {
+    border: 1px solid red;
+}
+
 .car-brand {
     position: absolute;
     bottom: -10px;
@@ -120,4 +124,19 @@
     /* Center horizontally */
     transform: translateX(-50%);
     /* Offset left position by 50% of its width */
+}
+
+.car-image-img {
+    width: 250px;
+    /* Set a fixed width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    object-fit: cover;
+    /* Ensure the image covers the given dimensions without distortion */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    display: block;
+    /* Remove any extra space below the image */
+    margin: 0 auto;
+    /* Center the image horizontally within its container */
 }

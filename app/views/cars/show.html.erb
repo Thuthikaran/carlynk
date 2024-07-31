@@ -1,7 +1,8 @@
 <div class="background-color">
+
     <div class="car-image">
-        <img src="" alt="">
         <div class="car-brand">
+            <%= image_tag @car.image_urls, alt: "#{@car.brand} #{@car.model}" , class: 'car-image-img' %>
             <%= @car.brand %>
             <%= @car.model %>
             <%= @car.year_of_production %>
