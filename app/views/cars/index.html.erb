@@ -6,7 +6,7 @@
         <div class="col-md-4 mb-4">
             <%= link_to car_path(car), class: 'card car-card text-decoration-none text-dark' do %>
                 <div class="card-image">
-                    <%= cl_image_tag "2020-Toyota-Camry_pnjtow" , class: "car-image" %>
+                    <%= cl_image_tag car.image_urls, class: "car-image" %>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
