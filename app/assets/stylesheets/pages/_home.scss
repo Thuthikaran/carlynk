@@ -1,32 +1,41 @@
-/* Ensure body and html cover full viewport and prevent overflow */
 html,
 body {
     height: 100%;
     margin: 0;
 }
 
-/* Make the container take up the full viewport height */
 .home-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-/* Hero Section */
 .hero-section {
     background-size: cover;
     color: #333;
     text-align: center;
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    /* Ensure relative positioning for absolute positioning of elements inside */
 }
 
-/* Footer */
+.image-box {
+    margin-bottom: 20px;
+    /* Space between image and text */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
     background-color: rgb(65, 0, 186);
-    /* Match the navbar background */
     color: white;
     text-align: center;
     padding: 15px 20px;
@@ -39,10 +48,8 @@ footer p {
     margin: 0;
 }
 
-/* Button Styling */
 button {
     background-color: rgb(65, 0, 186);
-    /* Matching background color */
     border: none;
     color: white;
     padding: 12px 24px;
@@ -54,32 +61,34 @@ button {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Button Hover State */
 button:hover {
     background-color: #fff;
-    /* White background on hover */
     transform: scale(1.05);
     color: rgb(65, 0, 186);
-    /* Change text color on hover */
 }
 
-/* Button Focus State */
 button:focus {
     outline: none;
 }
 
-/* Button Active State */
 button:active {
     transform: scale(1);
 }
 
-/* Remove text decoration from link inside the button */
 button a {
     text-decoration: none;
     color: inherit;
-    /* Ensure the link inherits the button's text color */
 }
 
 .carlynk {
     color: rgb(65, 0, 186);
+}
+
+.hero-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
 }
