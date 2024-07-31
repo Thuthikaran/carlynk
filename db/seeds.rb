@@ -84,21 +84,21 @@ Car.find_or_create_by!(
   car.fuel_type = 'Gasoline'
 end
 
-Car.find_or_create_by!(
-  user: thuthi,
-  brand: 'Tesla',
-  model: 'Model 3',
-  year_of_production: 2023
-) do |car|
-  car.address = '50 Rue du Faubourg Saint-Honoré, 75008 Paris, France'
-  car.price_per_day = 120.00
-  car.color = 'Black'
-  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722389978/5622e9c0-90e7-4848-bba6-24e60940e327_b4xnyn.webp'
-  car.transmission = 'Automatic'
-  car.mileage = 2000
-  car.seats = 5
-  car.fuel_type = 'Electric'
-end
+# Car.find_or_create_by!(
+#   user: thuthi,
+#   brand: 'Tesla',
+#   model: 'Model 3',
+#   year_of_production: 2023
+# ) do |car|
+#   car.address = '50 Rue du Faubourg Saint-Honoré, 75008 Paris, France'
+#   car.price_per_day = 120.00
+#   car.color = 'Black'
+#   car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722389978/5622e9c0-90e7-4848-bba6-24e60940e327_b4xnyn.webp'
+#   car.transmission = 'Automatic'
+#   car.mileage = 2000
+#   car.seats = 5
+#   car.fuel_type = 'Electric'
+# end
 
 puts "Created or updated cars for user #{thuthi.email}"
 
