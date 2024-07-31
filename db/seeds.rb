@@ -1,4 +1,4 @@
-# # db/seeds.rb
+# db/seeds.rb
 
 # Find the user with ID 1 and assign it to a variable named 'thuthi'
 thuthi = User.find(1)
@@ -38,18 +38,66 @@ end
 
 Car.find_or_create_by!(
   user: thuthi,
-  brand: 'Ford',
-  model: 'Focus',
-  year_of_production: 2021
+  brand: 'BMW',
+  model: '3 Series',
+  year_of_production: 2022
 ) do |car|
-  car.address = '20 Avenue des Champs-Élysées, 75008 Paris, France'
-  car.price_per_day = 60.00
-  car.color = 'Black'
-  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722388493/ford-focus-10-flexifuel-125-s-s-mhev-occasion-2024-nice_ccfwet.png'
+  car.address = '25 Rue de Rivoli, 75001 Paris, France'
+  car.price_per_day = 90.00
+  car.color = 'Silver'
+  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722390003/bmw-3-series-sedan-lci-modelfinder_yfs6x0.png'
   car.transmission = 'Automatic'
-  car.mileage = 10000
+  car.mileage = 8000
   car.seats = 5
   car.fuel_type = 'Gasoline'
+end
+
+Car.find_or_create_by!(
+  user: thuthi,
+  brand: 'Audi',
+  model: 'A4',
+  year_of_production: 2021
+) do |car|
+  car.address = '30 Avenue Montaigne, 75008 Paris, France'
+  car.price_per_day = 85.00
+  car.color = 'Gray'
+  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722389991/2d913b11-3ba5-4b24-b25e-c1c66a8bf8e6_cfdc5t.webp'
+  car.transmission = 'Automatic'
+  car.mileage = 12000
+  car.seats = 5
+  car.fuel_type = 'Diesel'
+end
+
+Car.find_or_create_by!(
+  user: thuthi,
+  brand: 'Mercedes-Benz',
+  model: 'C-Class',
+  year_of_production: 2023
+) do |car|
+  car.address = '40 Rue de la Paix, 75002 Paris, France'
+  car.price_per_day = 100.00
+  car.color = 'White'
+  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722389978/2023-mercedes-benz-c-class_2_b9q8ub.png'
+  car.transmission = 'Automatic'
+  car.mileage = 5000
+  car.seats = 5
+  car.fuel_type = 'Gasoline'
+end
+
+Car.find_or_create_by!(
+  user: thuthi,
+  brand: 'Tesla',
+  model: 'Model 3',
+  year_of_production: 2023
+) do |car|
+  car.address = '50 Rue du Faubourg Saint-Honoré, 75008 Paris, France'
+  car.price_per_day = 120.00
+  car.color = 'Black'
+  car.image_urls = 'https://res.cloudinary.com/drxas1wpe/image/upload/v1722389978/5622e9c0-90e7-4848-bba6-24e60940e327_b4xnyn.webp'
+  car.transmission = 'Automatic'
+  car.mileage = 2000
+  car.seats = 5
+  car.fuel_type = 'Electric'
 end
 
 puts "Created or updated cars for user #{thuthi.email}"
