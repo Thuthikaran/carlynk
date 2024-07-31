@@ -1,4 +1,4 @@
-<h2>Log in</h2>
+<!-- <h2>Log in</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
   <div class="form-inputs">
@@ -17,4 +17,42 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links" %> -->
+
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card shadow-sm" style="width: 100%; max-width: 400px;">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4">Log in</h2>
+
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f|
+        %>
+        <div class="mb-3">
+          <%= f.input :email, required: false, autofocus: true, input_html: { autocomplete: "email" ,
+            class: "form-control" }, label: "Email Address" , placeholder: "Enter your email" %>
+        </div>
+
+        <div class="mb-3">
+          <%= f.input :password, required: false, input_html: { autocomplete: "current-password" , class: "form-control"
+            }, label: "Password" , placeholder: "Enter your password" %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="form-check mb-3">
+            <%= f.input :remember_me, as: :boolean, label: "Remember me" , input_html: { class: "form-check-input" } %>
+          </div>
+          <% end %>
+
+            <div class="d-grid">
+              <%= f.button :submit, "Log in" , class: "btn btn-primary" %>
+            </div>
+            <% end %>
+
+              <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
+
+<!-- Include Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
