@@ -84,3 +84,40 @@
 .form button:hover {
     background-color: #0056b3;
 }   
+.back-to-list {
+    display: block;
+    text-align: center;
+    /* Center the text */
+    margin-top: 20px;
+    /* Add some space above the link */
+    font-size: 18px;
+    /* Increase the font size */
+    color: #007bff;
+    /* Bootstrap primary color or adjust as needed */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.back-to-list:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+/* Position the link at the bottom of the page */
+.background-color {
+    position: relative;
+    /* Ensure relative positioning for proper alignment */
+    min-height: 100vh;
+    /* Ensure the container takes full viewport height */
+}
+
+.back-to-list {
+    position: absolute;
+    /* Position it absolutely within the container */
+    bottom: 20px;
+    /* Adjust distance from the bottom */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Offset left position by 50% of its width */
+}
