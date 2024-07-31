@@ -30,7 +30,6 @@
         <% @reservations.each do |reservation| %>
             <% car=Car.find(reservation.car_id) %>
                 <div class="reservation-card">
-                    <!-- <img src="<%= car.image_urls %>" class="reservation-image" alt="<%= car.brand %> <%= car.model %>"> -->
                     <div class="reservation-content">
                         <h5 class="reservation-title">
                             <%= car.brand %>
