@@ -1,13 +1,7 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
 }
 
 .hero-section {
@@ -20,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    min-height: 87vh;
 }
 
 .image-box {
