@@ -107,10 +107,14 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    padding: 5px 10px;
+    border: 1px solid rgb(65, 0, 186) ;
+    margin-top: 5px;
+    border-radius: 4px;
 }
 
 .back-to-list:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .btn-color {
