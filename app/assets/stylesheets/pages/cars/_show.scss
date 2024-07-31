@@ -26,15 +26,12 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* Space between the two sections */
     margin: 30px;
 }
 
 .car-details {
     flex: 1;
-    /* Adjust size of the car details section */
     background-color: #f9f9f9;
-    /* Light background color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,9 +45,7 @@
 
 .form {
     flex: 1;
-    /* Adjust size of the form section */
     background-color: #fff;
-    /* White background color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -87,56 +82,35 @@
 
 .form button:hover {
     background-color: #0056b3;
-}   
-.back-to-list {
-    display: block;
-    text-align: center;
-    /* Center the text */
-    margin-top: 20px;
-    /* Add some space above the link */
-    font-size: 18px;
-    /* Increase the font size */
-    color: #007bff;
-    /* Bootstrap primary color or adjust as needed */
-    text-decoration: none;
-    /* Remove underline */
 }
 
-.back-to-list:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
-}
-
-/* Position the link at the bottom of the page */
 .background-color {
     position: relative;
-    /* Ensure relative positioning for proper alignment */
     min-height: 100vh;
-    /* Ensure the container takes full viewport height */
-}
-
-.back-to-list {
-    position: absolute;
-    /* Position it absolutely within the container */
-    bottom: 20px;
-    /* Adjust distance from the bottom */
-    left: 50%;
-    /* Center horizontally */
-    transform: translateX(-50%);
-    /* Offset left position by 50% of its width */
 }
 
 .car-image-img {
     width: 250px;
-    /* Set a fixed width */
     height: auto;
-    /* Maintain the aspect ratio */
     object-fit: cover;
-    /* Ensure the image covers the given dimensions without distortion */
     border-radius: 8px;
-    /* Optional: rounded corners */
     display: block;
-    /* Remove any extra space below the image */
     margin: 0 auto;
-    /* Center the image horizontally within its container */
+}
+
+.back-to-list {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.back-to-list:hover {
+    text-decoration: underline;
 }
