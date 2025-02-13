@@ -2,6 +2,6 @@
 
 CarLynk is a peer-to-peer car rental platform that eliminates middlemen, reducing costs and saving time by handling everything online. Built with Ruby on Rails for the backend, it ensures a seamless experience for both car owners and renters.
 
-![Screenshot](https://private-user-images.githubusercontent.com/86117226/412677131-d481d610-7e29-4f6a-aeec-2fc1d968e719.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0MTA1ODYsIm5iZiI6MTczOTQxMDI4NiwicGF0aCI6Ii84NjExNzIyNi80MTI2NzcxMzEtZDQ4MWQ2MTAtN2UyOS00ZjZhLWFlZWMtMmZjMWQ5NjhlNzE5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjEzVDAxMzEyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM2ODIzYTk3MDg4NWQ2Y2QyMmI3NWVhMzgzMDc2YTFhNzgzZTI1NDExMTg5Y2U0MWM3MmZjNGYyYTNlMTQ2YzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.NPchDA17zGI5ii5b077RwM6XEAUX60My2p-YECicANA)
+![Screenshot](https://res.cloudinary.com/drxas1wpe/image/upload/v1722389991/2d913b11-3ba5-4b24-b25e-c1c66a8bf8e6_cfdc5t.webp)
 
 **Deployed at:** [https://thuthi-flixx.netlify.app/](https://thuthi-flixx.netlify.app/)
